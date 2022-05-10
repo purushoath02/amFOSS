@@ -1,0 +1,23 @@
+name: getting_started_app
+#name: introduction_example
+description: Demo app of the introduction_screen package
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  dots_indicator: ^2.1.0
+  introduction_screen: ^3.0.1
+  flutter:
+    sdk: flutter
+
+  
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
