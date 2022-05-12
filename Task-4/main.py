@@ -34,7 +34,7 @@ def fetch_img(date: datetime, id: int):
             urllib.request.urlretrieve(x['img_src'],"image.png")
             img = Image.open("image.png")
             img.show()
-                
+@app.command()              
 def list_id(date: datetime): 
     print("Sending API Req")
     date = str(date.date())
