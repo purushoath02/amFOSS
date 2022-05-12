@@ -25,13 +25,16 @@ def fetch_img(date: datetime, id: int):
     
     response = requests.get(API_URL)
     raw_data = json.loads(response.content)
+    #print(response.content)
     
     for x in raw_data['photos']:
-        for y in x: 
-            
-            if x['id'] == id:
-                print(x['img_src'])
-                
+        #print(x['id'])
+        if x['id'] == id:
+            print(x['img_src'])
+            urllib.request.urlretrieve(x['img_src'],"image.png")
+
+            img = Image.open("image.png")
+            img.show()
                 
 
     
