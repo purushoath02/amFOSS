@@ -6,22 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crust</title>
-    <link href="images/salami-pizza.png" type="image/x-icon" />
+    <link rel = "icon" href="images/salami-pizza.png" type="image/x-icon" />
     <!-- display the favicon on titlebar -->
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <!-- link stylesheet -->
   </head>
   <body translate="no">
     <div class="pizza-box">
       <div class="left-container">
         <img
-          src="images/pizza-crusts.png"
+          src="images/pizza-crusts.jpg"
           alt="chart with different types of pizza crusts"
         />
         <!-- display the image -->
       </div>
       <div class="right-container">
-        <form>
+        <form action="/action_page.php" method="get">
           <!-- set form-action -->
           <header>
             <h1>Yay, pizza! Bake it right</h1>
@@ -74,6 +74,20 @@
                     value="male"
                   />
                   <label for="gender-male">Male</label>
+                  <input
+                    id="gender-Transgender"
+                    name="gender"
+                    type="radio"
+                    value="Transgender"
+                  />
+                  <label for="gender-Transgender">Transgender</label>
+                  <input
+                    id="gender-Other"
+                    name="gender"
+                    type="radio"
+                    value="Other"
+                  />
+                  <label for="gender-Other">Other</label>
                 </div>
               </div>
             </div>
@@ -121,9 +135,11 @@
               <button
                 type="button"
                 class="next"
-                onclick="this.classList.add('button--loading')"
+                onclick="this.classList.add('button--loading');document.location='../page-2/index.html'"
               >
                 <span class="button__text">Next</span>
+
+              </button>
             </div>
           </footer>
         </form>

@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>JS</title>
   </head>
+  
   <body>
+    <script src="../page-2/js/index.js"></script>
     <!--On click of Button-1 store something in localStorage-->
-    <button class="button">Button-1</button>
+    <button onclick="button_1()" class="button">Button-1</button>
     <!--On click of Button-2 show a popup with current time-->
-    <button class="button">Button-2</button>
+    <button onclick="button_2()" class="button">Button-2</button>
     <!--On click of Button-3 change the background-->
-    <button class="button">Button-3</button>
+    <button onclick="button_3()" class="button">Button-3</button>
     <!--On click of Button-4 refresh the page-->
-    <button class="button">Button-4</button>
+    <button class="button" onclick="location.reload()">Button-4</button>
     <!--On click of Button-5 open a new window-->
-    <button class="button">Button-5</button>
+    <button onclick="window.open(document.URL);" class="button">Button-5</button> 
     <!--On click of Button-6 spam the console with 'I did it'-->
-    <button class="button">Button-6</button>
-    <form>
+    <button onclick="button_6()" class="button">Button-6</button>
+    <form method="get" action="../page-3/chart.html">
       <!--set form action-->
       <button class="button">Next</button>
     </form>
